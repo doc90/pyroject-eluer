@@ -2,7 +2,18 @@
 Pyroject-euler v. 0.0 by Doc
 http://filippo.giomi.it
 '''
+
 import math
+
+'''
+isPrime(int n)
+Return true if n is a prime number
+e.g.
+>>> isPrime(5)
+True
+>>> isPrime(4)
+False
+'''
 def isPrime(n):
     i=3
     limit=math.sqrt(n)
@@ -16,6 +27,13 @@ def isPrime(n):
         i+=2
     return True
 
+'''
+primeList(int n)
+Return a list of prime numbers <=n
+e.g.
+>>> primeList(20)
+[2, 3, 5, 7, 11, 13, 17, 19]
+'''
 def primeList(limit):
     import math
     n=3
@@ -27,6 +45,13 @@ def primeList(limit):
         n+=2
     return l
 
+'''
+factorize(int n)
+Return a list with factorization of n
+e.g.
+>>> factorize(20)
+[2, 2, 5]
+'''
 def factorize(n):
     i=1
     l=[]
