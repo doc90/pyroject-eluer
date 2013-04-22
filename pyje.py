@@ -1,3 +1,7 @@
+'''
+Pyroject-euler v. 0.0 by Doc
+http://filippo.giomi.it
+'''
 import math
 def isPrime(n):
     i=3
