@@ -62,3 +62,20 @@ def factorize(n):
             i=0
         i+=1
     return l
+
+'''
+isPalindrome(int n)
+Return True if n is palindome
+e.g.
+>>> isPalindrome(1234321)
+True
+'''
+def isPalindrome(n):
+	r=False
+	if (len(str(n))%2==0):
+            if str(n)[:len(str(n))/2]==str(n)[len(str(n))/2:][::-1]:
+                r=True
+        else:
+            if str(n)[(len(str(n))+1)/2:]==str(n)[:len(str(n))/2][::-1]:
+                r=True
+	return r
