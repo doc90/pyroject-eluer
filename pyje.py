@@ -79,3 +79,18 @@ def isPalindrome(n):
             if str(n)[(len(str(n))+1)/2:]==str(n)[:len(str(n))/2][::-1]:
                 r=True
 	return r
+
+'''
+fib(int n)
+Return a list with n fibonacci numbers
+e.g.
+>>> fib(10)
+[1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+'''
+def fib(n):
+    f=[1,1,]
+    i=2
+    while i<n:
+        f.append(f[i-1]+f[i-2])
+        i+=1
+    return f
