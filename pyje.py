@@ -1,6 +1,6 @@
 '''
 Pyroject-euler v. 0.0 by Doc
-http://filippo.giomi.it
+http://ildoc.it
 '''
 
 import math
